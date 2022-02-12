@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+</head>
+
+<body>
+    <section class="bg-info py-3">
+        <!-- websiteTitle -->
+        <div class="container">
+            <h2 class="text-center text-uppercase display-3 text-white">Your invoice</h2>
+        </div>
+    </section>
+    <section class="py-5 bg-light">
+        <!-- dataInputSection -->
+        <div class="container">
+            <div class=" bg-secondary py-5 px-3 rounded-3">
+                <h2 class="display-6">Please enter the data</h2>
+
+                <div class="input-group py-3">
+                    <button class="btn btn-danger" disabled>Buyer Details</button>
+                    <textarea class=" w-50 form-control" name="" id="" cols="10" rows="2"></textarea>
+                    <button class="btn btn-primary px-3">Submit</button>
+                </div>
+                <!-- dataInputForm -->
+                <div class=" w-50 mx-auto">
+                    <h4 class="lead text-white">Enter the item deatils</h4>
+                    <form action="#">
+                        <div class="input-group">
+                            <label for="" class="bg-danger text-white px-3 pt-2 w-25">Items Name</label>
+                            <input class="form-control" type="text" name="" id="">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <label for="" class="bg-danger text-white px-3 pt-2 w-25">Price</label>
+                            <input class="form-control" type="number" name="" id="">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <label for="" class="bg-danger text-white px-3 pt-2 w-25">Quntity</label>
+                            <input class="form-control" type="number" name="" id="">
+                        </div>
+                        <br>
+                        <div class="btn btn-info text-white w-100">Add</div>
+                    </form>
+                    <marquee class="text-white lead mt-3" behavior="" direction="left">You can add more items using input fields.
+                    </marquee>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+    </section>
+    <section class="bg-light py-5">
+        <!-- dataCollectionSection -->
+        <div class="container">
+            <div class="bg-white py-5 px-3 text-center text-white rounded-3 shadow-lg">
+                <div class="row h-100 gy-3">
+                    <div class="col-md-4">
+                        <div class="h-100 bg-dark text-white py-3 px-2">
+                            <span class="text-warning">Date: 12/12/2022</span>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-100 bg-dark text-white py-3 px-2">
+                            <span class="text-warning d-block">Invoice to</span>
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem commodi facere nulla molestias, inventore qui mollitia itaque assumenda doloribus sed excepturi esse nisi quidem totam quis. Necessitatibus odit quaerat iusto!
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="h-100 bg-dark text-white py-3 px-2">
+                            <span class="text-warning d-block">Seller</span>
+                            <span>
+                              <address>
+                                abcd inc hellow@apexo.com 16 ctg,
+                                <br>
+                                Bangladesh
+                              </address>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- inputFieldDataCollection -->
+                <table class="table mt-5">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quntity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">DragonFxc</th>
+                            <td>12</td>
+                            <td>5</td>
+                            <td>60</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td scope="row"></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <h6>SubTotal $<span>60</span></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row"></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <h6>Tax $<span>60</span></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row"></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <h6>GrandTotal $<span>60</span></h6>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
