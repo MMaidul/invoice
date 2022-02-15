@@ -27,8 +27,8 @@
 
                 <div class="input-group py-3">
                     <button class="btn btn-danger" disabled>Buyer Details</button>
-                    <textarea class=" w-50 form-control" name="" id="" cols="10" rows="2"></textarea>
-                    <button class="btn btn-primary px-3">Submit</button>
+                    <textarea class=" w-50 form-control" name="" id="buyer-input" cols="10" rows="2"></textarea>
+                    <button id="input-submit" class="btn btn-primary px-3">Submit</button>
                 </div>
                 <!-- dataInputForm -->
                 <div class=" w-50 mx-auto">
@@ -36,20 +36,20 @@
                     <form action="#">
                         <div class="input-group">
                             <label for="" class="bg-danger text-white px-3 pt-2 w-25">Items Name</label>
-                            <input class="form-control" type="text" name="" id="">
+                            <input class="form-control" type="text" name="" id="item-name">
                         </div>
                         <br>
                         <div class="input-group">
                             <label for="" class="bg-danger text-white px-3 pt-2 w-25">Price</label>
-                            <input class="form-control" type="number" name="" id="">
+                            <input class="form-control" type="number" name="" id="item-price">
                         </div>
                         <br>
                         <div class="input-group">
                             <label for="" class="bg-danger text-white px-3 pt-2 w-25">Quntity</label>
-                            <input class="form-control" type="number" name="" id="">
+                            <input class="form-control" type="number" name="" id="item-quntity">
                         </div>
                         <br>
-                        <div class="btn btn-info text-white w-100">Add</div>
+                        <div id="item-button" class="btn btn-info text-white w-100">Add</div>
                     </form>
                     <marquee class="text-white lead mt-3" behavior="" direction="left">You can add more items using input fields.
                     </marquee>
@@ -72,8 +72,8 @@
                     <div class="col-md-4">
                         <div class="h-100 bg-dark text-white py-3 px-2">
                             <span class="text-warning d-block">Invoice to</span>
-                            <span>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem commodi facere nulla molestias, inventore qui mollitia itaque assumenda doloribus sed excepturi esse nisi quidem totam quis. Necessitatibus odit quaerat iusto!
+                            <span id="buyer-info">
+                              
                             </span>
                         </div>
                     </div>
@@ -100,13 +100,13 @@
                             <th>Total</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody id="table-info">
+                        <!-- <tr>
                             <th scope="row">DragonFxc</th>
                             <td>12</td>
                             <td>5</td>
                             <td>60</td>
-                        </tr>
+                        </tr> -->
                     </tbody>
                     <tbody>
                         <tr>
@@ -114,7 +114,7 @@
                             <td></td>
                             <td></td>
                             <td>
-                                <h6>SubTotal $<span>60</span></h6>
+                                <h6>SubTotal $<span id="sub-total">00</span></h6>
                             </td>
                         </tr>
                         <tr>
@@ -122,7 +122,7 @@
                             <td></td>
                             <td></td>
                             <td>
-                                <h6>Tax $<span>60</span></h6>
+                                <h6>Tax $<span id="tax">60</span></h6>
                             </td>
                         </tr>
                         <tr>
@@ -130,7 +130,7 @@
                             <td></td>
                             <td></td>
                             <td>
-                                <h6>GrandTotal $<span>60</span></h6>
+                                <h6>GrandTotal $<span id="grand-total">60</span></h6>
                             </td>
                         </tr>
                     </tbody>
